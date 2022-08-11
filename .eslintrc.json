@@ -17,6 +17,18 @@
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
+    "settings": {
+		"react": {
+			"version": "detect"
+		},
+        "import/resolver": {
+            //importするファイルをjsだけではなく、tsを含むファイルを許可する
+            "node": {
+              "paths": ["src"],
+              "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+          }
+	},
     "plugins": [
         "react",
         "@typescript-eslint"
