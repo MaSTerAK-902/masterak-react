@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './page/home'
 import Contact from './page/contact'
 import Header_ from './components/header'
+import Footer_ from './components/footer'
 
 export const App = () => {
 	return (
@@ -14,6 +15,7 @@ export const App = () => {
 					<Route path="/" element={<Home />} />
 					<Route path="/Contact" element={<Contact />} />
 				</Routes>
+				<Footer_ />
 			</div>
 		</Router>
 	)
