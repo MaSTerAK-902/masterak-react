@@ -1,7 +1,11 @@
 import React from 'react'
 
 const footer = () => {
-	return <div className="Copyright">&copy;2022-masterak.jp</div>
+	return (
+		<footer>
+			<div className="Copyright">&copy;2022 - masterak.jp</div>
+		</footer>
+	)
 }
 
 export default footer
