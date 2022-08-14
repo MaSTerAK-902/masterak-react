@@ -7,22 +7,25 @@
 
 header {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
   /*position: fixed;*/
   width: 100%;
   z-index: 10;
 
   .App-logo {
     width: 20%;
+    margin-top: 1rem;
   }
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 0.5rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /*position: fixed;*/
   width: 100%;
   z-index: 10;
+
 }
