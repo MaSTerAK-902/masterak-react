@@ -3,20 +3,19 @@
 	flex-direction: column;
 	width: 100%;
 	align-items: center;
-	margin-top: 100px;
+	margin-top: 60px;
 
 	.comment {
-		position: relative; /* 三角の位置を固定するために設定 */
-		width: 300px; /* 幅 */
-		margin: 0 auto 40px; /* 上 左右 下のマージン */
-		padding: 10px; /* ふきだし内の余白 */
-		background: #fff; /* 背景色 */
-		border: 1px solid #000; /* 線色 */
-		text-align: center; /* テキストの揃え */
+		position: relative;
+		width: 300px;
+		margin: 0 auto 40px;
+		padding: 10px;
+		background: #fff;
+		border: 1px solid #000;
+		text-align: center;
 	}
 	.comment::before,
 	.comment::after {
-		/* 三角 */
 		content: '';
 		border: 14px solid transparent;
 		position: absolute;
@@ -24,26 +23,66 @@
 		margin-left: -14px;
 	}
 	.comment::before {
-		/* 線になる部分 */
-		border-top-color: #000; /* 吹き出しの線の色と同じ色 */
+		border-top-color: #000;
 		bottom: -28px;
 	}
 	.comment::after {
-		/* 地の部分 */
-		border-top-color: #fff; /* 吹き出しの背景色と同じ色 */
+		border-top-color: #fff;
 		bottom: -27px;
 	}
 
-	.character {
-		.masterak {
-            border-radius:50%;
-            border: 1px solid #000;
-			height: 350px;
-            width: 350px;
-            background-image: url(../images/masterak.png);
-            background-position: 70% 50%;
-            background-size: 300px;
+	.masterak {
+		height: 200px;
+		width: 200px;
+		border-radius: 50%;
+		border: 1px solid #969696;
+		background-image: url(../images/masterak.png);
+		background-position: 70% 50%;
+		background-size: 170px;
+		background-repeat: no-repeat;
+	}
+
+	.box_wrap {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-top: 30px;
+        width: 50%;
+
+        .box {
+            margin: 1rem;
+            width: 380px;
+            height: 150px;
+            background-position: center;
+            border: solid 1px #969696 ;
+            border-radius: 15px;
+            box-shadow:5px 3px rgba(153, 153, 153, 0.2);
             background-repeat: no-repeat;
+            cursor: pointer;
+            
+        }
+
+		.github_link {
+            background-image: url(../images/Github_logp.svg);
+			background-color: white;
+		}
+
+		.twitter_link {
+            background-size: 60%;
+            background-image: url(../images/Twitter_logo.svg);
+			background-color: white;
+		}
+
+		.zenn_link {
+            background-size: 60%;
+            background-image: url(../images/Zenn_logo.svg);
+			background-color: white;
+		}
+
+		.contact_link {
+            background-size: 60%;
+            background-image: url(../images/Contact_icon.svg);
+			background-color: white;
 		}
 	}
 }
