@@ -1,6 +1,49 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	margin-top: 100px;
+
+	.comment {
+		position: relative; /* 三角の位置を固定するために設定 */
+		width: 300px; /* 幅 */
+		margin: 0 auto 40px; /* 上 左右 下のマージン */
+		padding: 10px; /* ふきだし内の余白 */
+		background: #fff; /* 背景色 */
+		border: 1px solid #000; /* 線色 */
+		text-align: center; /* テキストの揃え */
+	}
+	.comment::before,
+	.comment::after {
+		/* 三角 */
+		content: '';
+		border: 14px solid transparent;
+		position: absolute;
+		left: 50%;
+		margin-left: -14px;
+	}
+	.comment::before {
+		/* 線になる部分 */
+		border-top-color: #000; /* 吹き出しの線の色と同じ色 */
+		bottom: -28px;
+	}
+	.comment::after {
+		/* 地の部分 */
+		border-top-color: #fff; /* 吹き出しの背景色と同じ色 */
+		bottom: -27px;
+	}
+
+	.character {
+		.masterak {
+            border-radius:50%;
+            border: 1px solid #000;
+			height: 350px;
+            width: 350px;
+            background-image: url(../images/masterak.png);
+            background-position: 70% 50%;
+            background-size: 300px;
+            background-repeat: no-repeat;
+		}
+	}
 }

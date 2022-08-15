@@ -1,24 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './style.scss'
-
-const message_array = ['Hi! My name is Masterak.', 'I am Engineer.', 'ゆっくりしていってね！']
+import masterak from '../images/masterak.png'
 
 const home = () => {
-	const [counter, setCount] = useState(0)
-	const useCountUp = () => {
-		setCount(counter + 1)
-		if (counter == 2) {
-			setCount(0)
-		}
-	}
-	setInterval(useCountUp, 5000)
 	return (
 		<div className="container">
 			<div className="comment">
-				<p>{message_array[counter]}</p>
+				<p>Hi! I&apos;m masterak</p>
 			</div>
 			<div className="character">
-				<p>ここにはキャラクター画像が入ります。</p>
+				<div className='masterak' />
 			</div>
 			<div className="links">
 				<p>ここにはリンクが入ります。</p>
