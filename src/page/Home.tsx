@@ -12,9 +12,6 @@ const home = () => {
 	const linkClick_Zenn = () => {
 		window.open('https://zenn.dev/masterak')
 	}
-	const linkClick_Contact = () => {
-		window.open('/contact', '_blank')
-	}
 
 	return (
 		<div className="container">
