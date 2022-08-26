@@ -1,5 +1,4 @@
 import React from 'react'
-import './App.scss'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './page/home'
 import Contact from './page/contact'
