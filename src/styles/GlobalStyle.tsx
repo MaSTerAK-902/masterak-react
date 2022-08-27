@@ -8,17 +8,17 @@ const GlobalStyles = createGlobalStyle`
   }
   :root{
     --dark-bg: #262626;
-    --white-bg: #262626;
-    --dark-font: #BCB4B4;
-    --white-font: #1E1E1E;
-    --gray-shadow: #363636;
-    --white : white;
-    --black: black;
+    --white-bg: #fafafa;
+    --dark-font: #6d6d6d;
+    --white-font: #f7f5f5;
+    --gray-shadow: #dfdfdf;
+
   }
   html{
-    font-size: 14px;
-    font-family: 'Roboto Mono';
-    background-color: var(--dark-bg);
+    font-size: 16px;
+    font-family: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
   }
   ul,li{
     list-style: none;
@@ -28,31 +28,15 @@ const GlobalStyles = createGlobalStyle`
   }
   img, svg{
     width: 100%;
-    height: 100%;
     object-fit: cover;
   }
   button{
     outline: none
   }
   .container {
-    max-width: 1200px;
-    width: 90%;
+    max-width: 1000px;
+    width: 100%;
     margin: 0 auto;
-  }
-/* Smooth Scroll  */
-  [data-scrollbar] {
-    height: 100vh;
-    overflow: hidden;
-    background-color: var(--gray-1);
-    .scroll-content {
-      background-color: var(--dark-bg);
-    }
-    .scrollbar-track.scrollbar-track-y {
-      background: var(--deep-dark);
-      .scrollbar-thumb-y {
-        background: var(--gray-1);
-      }
-    }
   }
 `
 export default GlobalStyles
