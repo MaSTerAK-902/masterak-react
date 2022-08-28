@@ -11,6 +11,7 @@ const FooterStyle = styled.div`
 		position: fixed;
 		bottom: 0;
 		padding-bottom: 0.5rem;
+		color: var(--dark-font);
 	}
 `
 
