@@ -10,7 +10,7 @@ const HomeStyle = styled.div`
 		flex-direction: column;
 		align-items: center;
 		padding-top: 4rem;
-		row-gap: 2rem;
+		row-gap: 5rem;
 	}
 `
 

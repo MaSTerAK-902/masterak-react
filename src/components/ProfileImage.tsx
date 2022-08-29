@@ -7,7 +7,7 @@ const PIStyle = styled.div`
 		height: 200px;
 		width: 200px;
 		border-radius: 50%;
-		border: 1px solid #969696;
+		border: 1px solid var(--dark-border);
 		background-repeat: no-repeat;
         background-image: url(${profile});
 		background-position: 70% 50%;
