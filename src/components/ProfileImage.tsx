@@ -10,8 +10,8 @@ const PIStyle = styled.div`
 		border: 1px solid var(--dark-border);
 		background-repeat: no-repeat;
         background-image: url(${profile});
-		background-position: 70% 50%;
-		background-size: 170px;
+		background-position: 60% 50%;
+		background-size: 140px;
         
 	}
 `
