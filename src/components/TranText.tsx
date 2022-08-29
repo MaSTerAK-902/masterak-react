@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const TTStyle = styled.div`
-	.Text p{
+	.Text p {
 		font-size: 1.2rem;
 		color: var(--dark-font);
 	}

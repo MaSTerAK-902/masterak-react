@@ -4,11 +4,11 @@ import logo_ from '../images/logo.svg'
 import styled from 'styled-components'
 
 const HeaderStyle = styled.div`
-	.container{
+	.container {
 		display: flex;
 		justify-content: center;
 	}
-	.header_col_1{
+	.header_col_1 {
 		padding-top: 1rem;
 		flex: 0.5;
 	}

@@ -12,36 +12,34 @@ const LinkButtonStyle = styled.div`
 		flex-flow: row wrap;
 		justify-content: center;
 		width: 620px;
-        gap: 20px;
+		gap: 20px;
 	}
-
 	.LinkButton {
 		width: 300px;
 		height: 150px;
 		border: 1px solid var(--dark-border);
 		border-radius: 15px;
-        background-position: center;
+		background-position: center;
 		box-shadow: 2px 2px rgba(153, 153, 153, 0.2);
 		background-repeat: no-repeat;
 		cursor: pointer;
 	}
-
-    .github{
-        background-size: 60%;
-        background-image: url(${github_img});
-    }
-    .twitter{
-        background-size: 60%;
-        background-image: url(${twitter_img});
-    }
-    .zenn{
-        background-size: 60%;
-        background-image: url(${zenn_img});
-    }
-    .contact{
-        background-size: 60%;
-        background-image: url(${contact_img});
-    }
+	.github {
+		background-size: 60%;
+		background-image: url(${github_img});
+	}
+	.twitter {
+		background-size: 60%;
+		background-image: url(${twitter_img});
+	}
+	.zenn {
+		background-size: 60%;
+		background-image: url(${zenn_img});
+	}
+	.contact {
+		background-size: 60%;
+		background-image: url(${contact_img});
+	}
 `
 
 const LinkButton = () => {
